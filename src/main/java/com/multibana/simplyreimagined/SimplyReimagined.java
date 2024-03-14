@@ -8,30 +8,19 @@ import net.minecraft.enchantment.EnchantmentLevelEntry;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.entity.Entity;
 import net.minecraft.item.*;
-import net.minecraft.item.map.MapIcon;
-import net.minecraft.item.map.MapState;
-import net.minecraft.registry.tag.TagKey;
-import net.minecraft.server.world.ServerWorld;
-import net.minecraft.text.Text;
-import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.TradeOffers;
-import net.minecraft.world.gen.structure.Structure;
 import org.jetbrains.annotations.Nullable;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class SimplyReimagined implements ModInitializer {
-	public static final Logger debugLogger = LoggerFactory.getLogger("simplyreimagined");
 	@Override
 	public void onInitialize() {
 		Config.createIfAbsent();
 		Config.reload();
-		debugLogger.info(Config.rules.toString());
 	}
 	public static class BuyForMultipleEmeraldsFactory
 			implements TradeOffers.Factory {
@@ -143,5 +132,5 @@ public class SimplyReimagined implements ModInitializer {
 		}
 	}
 
-	
+
 }

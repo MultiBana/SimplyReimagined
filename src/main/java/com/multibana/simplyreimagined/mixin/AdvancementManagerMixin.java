@@ -14,7 +14,7 @@ import java.util.Map;
 public class AdvancementManagerMixin {
     // never load any advancements at all
     @Inject(method = "load", at = @At("HEAD"), cancellable = true)
-    private void sneed(Map<Identifier, Advancement.Builder> advancements, CallbackInfo ci){
+    private void noAdvancements(Map<Identifier, Advancement.Builder> advancements, CallbackInfo ci){
         ci.cancel();
     }
 }
