@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "simply-reimagined",
+	"version": "${version}",
+	"name": "Simply Reimagined",
+	"description": "Reimagines the core mechanics and removes the bad features",
+	"authors": [
+		"MultiBana"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/simply-reimagined/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.multibana.simplyreimagined.SimplyReimagined"
+		],
+		"client": [
+			"com.multibana.simplyreimagined.SimplyReimaginedClient"
+		]
+	},
+	"mixins": [
+		"simply-reimagined.mixins.json",
+		{
+			"config": "simply-reimagined.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
