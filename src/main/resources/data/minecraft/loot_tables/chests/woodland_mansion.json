@@ -22,22 +22,22 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:music_disc_13",
-          "weight": 15
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:music_disc_cat",
-          "weight": 15
+          "weight": 10
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:music_disc_relic",
-          "weight": 15
+          "weight": 20
         },
         {
           "type": "minecraft:item",
           "name": "minecraft:name_tag",
-          "weight": 20
+          "weight": 25
         },
         {
           "type": "minecraft:item",
@@ -53,110 +53,6 @@
           "type": "minecraft:item",
           "name": "minecraft:diamond_chestplate",
           "weight": 5
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "enchantments": {
-                "minecraft:loyalty": 1
-              },
-              "function": "minecraft:set_enchantments"
-            }
-          ],
-          "name": "minecraft:book",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "enchantments": {
-                "minecraft:unbreaking": 1
-              },
-              "function": "minecraft:set_enchantments"
-            }
-          ],
-          "name": "minecraft:book",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "enchantments": {
-                "minecraft:luck_of_the_sea": 1
-              },
-              "function": "minecraft:set_enchantments"
-            }
-          ],
-          "name": "minecraft:book",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "enchantments": {
-                "minecraft:lure": 1
-              },
-              "function": "minecraft:set_enchantments"
-            }
-          ],
-          "name": "minecraft:book",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "enchantments": {
-                "minecraft:piercing": 1
-              },
-              "function": "minecraft:set_enchantments"
-            }
-          ],
-          "name": "minecraft:book",
-          "weight": 3
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "enchantments": {
-                "minecraft:multishot": 1
-              },
-              "function": "minecraft:set_enchantments"
-            }
-          ],
-          "name": "minecraft:book",
-          "weight": 3
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "enchantments": {
-                "minecraft:punch": 1
-              },
-              "function": "minecraft:set_enchantments"
-            }
-          ],
-          "name": "minecraft:book",
-          "weight": 1
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "enchantments": {
-                "minecraft:silk_touch": 2
-              },
-              "function": "minecraft:set_enchantments"
-            }
-          ],
-          "name": "minecraft:book",
-          "weight": 1
         }
       ],
       "rolls": {
@@ -395,6 +291,120 @@
         }
       ],
       "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "enchantments": {
+                "minecraft:loyalty": 1
+              },
+              "function": "minecraft:set_enchantments"
+            }
+          ],
+          "name": "minecraft:book",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "enchantments": {
+                "minecraft:unbreaking": 1
+              },
+              "function": "minecraft:set_enchantments"
+            }
+          ],
+          "name": "minecraft:book",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "enchantments": {
+                "minecraft:luck_of_the_sea": 1
+              },
+              "function": "minecraft:set_enchantments"
+            }
+          ],
+          "name": "minecraft:book",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "enchantments": {
+                "minecraft:lure": 1
+              },
+              "function": "minecraft:set_enchantments"
+            }
+          ],
+          "name": "minecraft:book",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "enchantments": {
+                "minecraft:piercing": 1
+              },
+              "function": "minecraft:set_enchantments"
+            }
+          ],
+          "name": "minecraft:book",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "enchantments": {
+                "minecraft:multishot": 1
+              },
+              "function": "minecraft:set_enchantments"
+            }
+          ],
+          "name": "minecraft:book",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "enchantments": {
+                "minecraft:punch": 1
+              },
+              "function": "minecraft:set_enchantments"
+            }
+          ],
+          "name": "minecraft:book",
+          "weight": 1
+        },
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "enchantments": {
+                "minecraft:silk_touch": 2
+              },
+              "function": "minecraft:set_enchantments"
+            }
+          ],
+          "name": "minecraft:book",
+          "weight": 2
+        }
+      ],
+      "rolls": {
+        "type": "minecraft:uniform",
+        "max": 2.0,
+        "min": 1.0
+      }
     }
   ],
   "random_sequence": "minecraft:chests/woodland_mansion"

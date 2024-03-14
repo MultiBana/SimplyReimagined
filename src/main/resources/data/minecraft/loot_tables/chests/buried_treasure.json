@@ -24,7 +24,8 @@
               "function": "minecraft:set_enchantments"
             }
           ],
-          "name": "minecraft:book"
+          "name": "minecraft:book",
+          "weight": 2
         },
         {
           "type": "minecraft:item",
@@ -37,7 +38,7 @@
             }
           ],
           "name": "minecraft:book",
-          "weight": 1
+          "weight": 3
         }
       ],
       "rolls": 1.0

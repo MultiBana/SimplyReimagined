@@ -15,7 +15,10 @@ import net.minecraft.entity.passive.VillagerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.item.map.MapIcon;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.tag.StructureTags;
+import net.minecraft.registry.tag.TagKey;
+import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
 import net.minecraft.village.TradeOffers;
 import net.minecraft.village.VillagerData;
@@ -224,17 +227,16 @@ public class VillagerEntityMixin {
 
                 map.put(VillagerProfession.CARTOGRAPHER, copyToFastUtilMap(ImmutableMap.of(
                         1, new TradeOffers.Factory[]{
-                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.PAPER, 36, 10, 5),
+                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.PAPER, 32, 10, 3),
                                 new TradeOffers.SellItemFactory(Items.MAP, 1, 1, 5)},
                         2, new TradeOffers.Factory[]{
-                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.AMETHYST_SHARD, 3, 6, 10),
-                                new TradeOffers.SellMapFactory(4, StructureTags.VILLAGE, "filled_map.village", MapIcon.Type.BANNER_YELLOW, 12, 10)},
+                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.AMETHYST_SHARD, 3, 6, 5),
+                                new TradeOffers.SellMapFactory(8, StructureTags.ON_OCEAN_EXPLORER_MAPS, "filled_map.monument", MapIcon.Type.MONUMENT, 12, 10)},
                         3, new TradeOffers.Factory[]{
                                 new SimplyReimagined.BuyForOneEmeraldFactory(Items.COMPASS, 1, 12, 10),
-                                new TradeOffers.SellMapFactory(8, StructureTags.ON_OCEAN_EXPLORER_MAPS, "filled_map.monument", MapIcon.Type.MONUMENT, 12, 10),
                                 new TradeOffers.SellMapFactory(9, StructureTags.ON_WOODLAND_EXPLORER_MAPS, "filled_map.mansion", MapIcon.Type.MANSION, 12, 10)},
                         4, new TradeOffers.Factory[]{
-                                new TradeOffers.SellItemFactory(Items.ITEM_FRAME, 1, 4, 15),
+                                new TradeOffers.SellItemFactory(Items.ITEM_FRAME, 1, 6, 15),
                                 new TradeOffers.SellItemFactory(Items.WHITE_BANNER, 1, 1, 15),
                                 new TradeOffers.SellItemFactory(Items.BLUE_BANNER, 1, 1, 15),
                                 new TradeOffers.SellItemFactory(Items.LIGHT_BLUE_BANNER, 1, 1, 15),
@@ -252,7 +254,7 @@ public class VillagerEntityMixin {
                                 new TradeOffers.SellItemFactory(Items.ORANGE_BANNER, 1, 1, 15),
                                 new TradeOffers.SellItemFactory(Items.LIGHT_GRAY_BANNER, 1, 1, 15)},
                         5, new TradeOffers.Factory[]{
-                                new TradeOffers.SellItemFactory(Items.GLOBE_BANNER_PATTERN, 12, 1, 30),
+                                new TradeOffers.SellItemFactory(Items.GLOBE_BANNER_PATTERN, 4, 1, 30),
                                 new SimplyReimagined.BuyForOneEmeraldFactory(Items.ECHO_SHARD, 1, 8, 30)})));
 
 

@@ -26,10 +26,12 @@ public class ChunkGeneratorMixin {
 //        cir.cancel();
 //        });
 //    }
+
+    // disabled as idk if it may cause potential bugs, not worth the trouble just for village maps
     // adds a minimum radius to locateStructure so village-finding maps wont just return the village you're in
-    @ModifyConstant(method = "locateStructure(Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/registry/entry/RegistryEntryList;Lnet/minecraft/util/math/BlockPos;IZ)Lcom/mojang/datafixers/util/Pair;", constant = @Constant(intValue = 0))
-    public int addMinRadius(int constant){
-        return 5;
-    }
+//    @ModifyConstant(method = "locateStructure(Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/registry/entry/RegistryEntryList;Lnet/minecraft/util/math/BlockPos;IZ)Lcom/mojang/datafixers/util/Pair;", constant = @Constant(intValue = 0))
+//    public int addMinRadius(int constant){
+//        return 0;
+//    }
 
 }
