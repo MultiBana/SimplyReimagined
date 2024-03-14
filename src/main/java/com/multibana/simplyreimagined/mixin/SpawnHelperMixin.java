@@ -22,8 +22,7 @@ public class SpawnHelperMixin {
     @Inject(method = "canSpawn(Lnet/minecraft/server/world/ServerWorld;Lnet/minecraft/entity/SpawnGroup;Lnet/minecraft/world/gen/StructureAccessor;Lnet/minecraft/world/gen/chunk/ChunkGenerator;Lnet/minecraft/world/biome/SpawnSettings$SpawnEntry;Lnet/minecraft/util/math/BlockPos$Mutable;D)Z", at = @At("RETURN"), cancellable = true)
     private static void cantSpawnSHITBLOATMOBS(ServerWorld world, SpawnGroup group, StructureAccessor structureAccessor, ChunkGenerator chunkGenerator, SpawnSettings.SpawnEntry spawnEntry, BlockPos.Mutable pos, double squaredDistance, CallbackInfoReturnable<Boolean> cir) {
         if (cir.getReturnValue()) {
-            if (spawnEntry.type == EntityType.ZOMBIE_VILLAGER
-                    || spawnEntry.type == EntityType.POLAR_BEAR
+            if (spawnEntry.type == EntityType.POLAR_BEAR
                     || spawnEntry.type == EntityType.LLAMA
                     || spawnEntry.type == EntityType.RABBIT
                     || spawnEntry.type == EntityType.BAT
@@ -39,12 +38,11 @@ public class SpawnHelperMixin {
     @Inject(method = "canSpawn(Lnet/minecraft/entity/SpawnRestriction$Location;Lnet/minecraft/world/WorldView;Lnet/minecraft/util/math/BlockPos;Lnet/minecraft/entity/EntityType;)Z", at = @At("RETURN"), cancellable = true)
     private static void stillCantSpawnSHITBLOATMOBS(SpawnRestriction.Location location, WorldView world, BlockPos pos, @Nullable EntityType<?> entityType, CallbackInfoReturnable<Boolean> cir) {
         if (cir.getReturnValue()) {
-            if (entityType == EntityType.ZOMBIE_VILLAGER
-                    || entityType == EntityType.POLAR_BEAR
+            if (entityType == EntityType.POLAR_BEAR
                     || entityType == EntityType.LLAMA
                     || entityType == EntityType.RABBIT
                     || entityType == EntityType.BAT
-                    || entityType == EntityType.DOLPHIN
+                    || (entityType == EntityType.DOLPHIN && !Config.rules.get("i_like_dolphins"))
                     || entityType == EntityType.TROPICAL_FISH
                     || entityType == EntityType.PANDA
                     || entityType == EntityType.GLOW_SQUID

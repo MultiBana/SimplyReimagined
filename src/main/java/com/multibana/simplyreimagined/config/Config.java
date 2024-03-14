@@ -36,6 +36,8 @@ public class Config {
             writer.println("infinity_power_incompatible:true");
             writer.println("# change to true to have dolphins spawn");
             writer.println("i_like_dolphins:false");
+            writer.println("# change to true to make elytra repairable with leather");
+            writer.println("i_kinda_liked_phantoms:false");
             writer.close();
         }
         catch (IOException e)
