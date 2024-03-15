@@ -60,11 +60,13 @@ public class SimplyReimagined implements ModInitializer {
 		public TradeOffer create(Entity entity, Random random) {
 			List<Enchantment> sold_enchantment_list = new ArrayList<>();
 			sold_enchantment_list.add(Enchantments.UNBREAKING);
+			sold_enchantment_list.add(Enchantments.FEATHER_FALLING);
 			sold_enchantment_list.add(Enchantments.SILK_TOUCH);
 			sold_enchantment_list.add(Enchantments.LOOTING);
 			List<Integer> price_list = new ArrayList<>();
-			price_list.add(45);
-			price_list.add(60);
+			price_list.add(35);
+			price_list.add(40);
+			price_list.add(50);
 			price_list.add(60);
 			int random_enchantment_idx = random.nextInt(sold_enchantment_list.size());
 			Enchantment enchantment = sold_enchantment_list.get(random_enchantment_idx);
