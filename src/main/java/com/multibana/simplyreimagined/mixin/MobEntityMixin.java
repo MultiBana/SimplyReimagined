@@ -1,9 +1,6 @@
 package com.multibana.simplyreimagined.mixin;
 
-import net.minecraft.entity.mob.DrownedEntity;
-import net.minecraft.entity.mob.MobEntity;
-import net.minecraft.entity.mob.SkeletonEntity;
-import net.minecraft.entity.mob.ZombifiedPiglinEntity;
+import net.minecraft.entity.mob.*;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.random.Random;
 import net.minecraft.world.LocalDifficulty;
@@ -21,6 +18,7 @@ public class MobEntityMixin {
 
 	// skeletons dont drop bows
 	// zombified piglins dont drop golden swords
+	// wither skeletons dont drop stone swords
 	// i think it works that way already, but just in case - dont let drowned drop tridents unless attacked by player
 	@ModifyArg(method = "dropEquipment", at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/mob/MobEntity;dropStack(Lnet/minecraft/item/ItemStack;)Lnet/minecraft/entity/ItemEntity;"))
 	private ItemStack dontDropShittyGear(ItemStack par1){
@@ -28,6 +26,7 @@ public class MobEntityMixin {
 		if((itemKey.contains("item.minecraft.bow") && instance instanceof SkeletonEntity)
 						|| (itemKey.contains("item.minecraft.golden_sword") && instance instanceof ZombifiedPiglinEntity)
 						|| (itemKey.contains("item.minecraft.trident") && instance instanceof DrownedEntity && ((LivingEntityAccessor)instance).getPlayerHitTimer() <= 0)
+						|| (itemKey.contains("item.minecraft.stone_sword") && instance instanceof WitherSkeletonEntity)
 		){
 			return ItemStack.EMPTY;
 		}

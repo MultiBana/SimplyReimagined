@@ -9,6 +9,7 @@
     "BlocksMixin",
     "BrewingRecipeRegistryMixin",
     "ChunkGeneratorMixin",
+    "ChunkSectionMixin",
     "DamageEnchantmentMixin",
     "EfficiencyEnchantmentMixin",
     "ElytraItemMixin",
