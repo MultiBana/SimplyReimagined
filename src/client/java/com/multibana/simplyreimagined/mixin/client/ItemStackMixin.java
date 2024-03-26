@@ -15,7 +15,7 @@ public class ItemStackMixin {
     // remove the attack speed tooltip text
     // if attack speed is "9" that means it's a trident and add hardcoded "8 Ranged Damage" row (non-translatable rn)
     @ModifyReturnValue(method = "getTooltip", at=@At("RETURN"))
-    private List<Text> sneed(List<Text> original){
+    private List<Text> showTridentRangedDamageTooltip(List<Text> original){
         int to_remove = -1;
         for(int i = 0; i < original.size(); i++){
             if(original.get(i).toString().contains("attack_speed")){

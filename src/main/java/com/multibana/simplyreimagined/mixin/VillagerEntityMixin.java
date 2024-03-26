@@ -77,8 +77,8 @@ public class VillagerEntityMixin {
                                 new TradeOffers.ProcessItemFactory(Items.COD, 10, Items.COOKED_COD, 11, 7, 4),
                                 new TradeOffers.SellItemFactory(Items.COD_BUCKET, 1, 1, 16, 5)},
                         2, new TradeOffers.Factory[]{
-                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.COD, 11, 8, 5),
-                                new TradeOffers.ProcessItemFactory(Items.SALMON, 10, Items.COOKED_SALMON, 11, 7, 5),
+                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.COD, 11, 8, 10),
+                                new TradeOffers.ProcessItemFactory(Items.SALMON, 10, Items.COOKED_SALMON, 11, 7, 7),
                                 new TradeOffers.SellItemFactory(Items.CAMPFIRE, 1, 12, 5)},
                         3, new TradeOffers.Factory[]{
                                 new SimplyReimagined.BuyForOneEmeraldFactory(Items.SALMON, 13, 10, 15),
@@ -208,18 +208,18 @@ public class VillagerEntityMixin {
 
                 map.put(VillagerProfession.LIBRARIAN, copyToFastUtilMap(ImmutableMap.of(
                         1, new TradeOffers.Factory[]{
-                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.PAPER, 33, 6, 3),
-                                new TradeOffers.SellItemFactory(Blocks.BOOKSHELF, 1, 3, 8, 2)},
+                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.PAPER, 33, 6, 5),
+                                new TradeOffers.SellItemFactory(Blocks.BOOKSHELF, 1, 3, 8, 5)},
                         2, new TradeOffers.Factory[]{
-                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.BOOK, 5, 7, 3),
+                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.BOOK, 5, 7, 5),
                                 new TradeOffers.SellItemFactory(Items.LANTERN, 1, 6, 5)},
                         3, new TradeOffers.Factory[]{
-                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.INK_SAC, 8, 8, 3),
-                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.WRITABLE_BOOK, 1, 2, 2),
-                                new TradeOffers.SellItemFactory(Items.COMPASS, 1, 1, 5)},
+                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.INK_SAC, 8, 8, 10),
+                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.WRITABLE_BOOK, 1, 2, 15),
+                                new TradeOffers.SellItemFactory(Items.COMPASS, 1, 1, 10)},
                         4, new TradeOffers.Factory[]{
-                                new TradeOffers.SellItemFactory(Items.CLOCK, 5, 1, 10),
-                                new TradeOffers.SellItemFactory(Items.NAME_TAG, 20, 1, 20)},
+                                new TradeOffers.SellItemFactory(Items.CLOCK, 5, 1, 20),
+                                new TradeOffers.SellItemFactory(Items.NAME_TAG, 20, 1, 30)},
                         5, new TradeOffers.Factory[]{
                                 new SimplyReimagined.EnchantBookFactory(30)
                             })));
@@ -287,17 +287,17 @@ public class VillagerEntityMixin {
                         2, new TradeOffers.Factory[]{
                                 new SimplyReimagined.BuyForOneEmeraldFactory(Items.IRON_INGOT, 7, 9, 5),
                                 new TradeOffers.SellItemFactory(new ItemStack(Items.BELL), 5, 1, 1, 10, 0.05f),
-                                new TradeOffers.SellItemFactory(new ItemStack(Items.CHAINMAIL_BOOTS), 1, 1, 1, 5, 0.1f),
-                                new TradeOffers.SellItemFactory(new ItemStack(Items.CHAINMAIL_LEGGINGS), 1, 1, 1, 5, 0.1f)},
+                                new TradeOffers.SellItemFactory(new ItemStack(Items.CHAINMAIL_BOOTS), 1, 1, 1, 10, 0.1f),
+                                new TradeOffers.SellItemFactory(new ItemStack(Items.CHAINMAIL_LEGGINGS), 1, 1, 1, 10, 0.1f)},
                         3, new TradeOffers.Factory[]{
                                 new SimplyReimagined.BuyForOneEmeraldFactory(Items.SCUTE, 3, 7, 20),
-                                new SimplyReimagined.BuyForMultipleEmeraldsFactory(Items.DIAMOND, 1, 8,1, 20),
-                                new TradeOffers.SellItemFactory(new ItemStack(Items.CHAINMAIL_HELMET), 2, 1, 1, 10, 0.1f),
-                                new TradeOffers.SellItemFactory(new ItemStack(Items.CHAINMAIL_CHESTPLATE), 2, 1, 1, 10, 0.1f),
-                                new TradeOffers.SellItemFactory(new ItemStack(Items.SHIELD), 8, 1, 2, 10, 0.1f)},
+                                new SimplyReimagined.BuyForMultipleEmeraldsFactory(Items.DIAMOND, 1, 8,2, 20),
+                                new TradeOffers.SellItemFactory(new ItemStack(Items.CHAINMAIL_HELMET), 2, 1, 1, 15, 0.1f),
+                                new TradeOffers.SellItemFactory(new ItemStack(Items.CHAINMAIL_CHESTPLATE), 2, 1, 1, 15, 0.1f),
+                                new TradeOffers.SellItemFactory(new ItemStack(Items.SHIELD), 8, 1, 2, 15, 0.1f)},
                         4, new TradeOffers.Factory[]{
-                                new TradeOffers.SellItemFactory(new ItemStack(Items.DIAMOND_LEGGINGS), 56, 1, 3, 15, 0.1f),
-                                new TradeOffers.SellItemFactory(new ItemStack(Items.DIAMOND_BOOTS), 32, 1, 3, 15, 0.1f)},
+                                new TradeOffers.SellItemFactory(new ItemStack(Items.DIAMOND_LEGGINGS), 56, 1, 3, 25, 0.1f),
+                                new TradeOffers.SellItemFactory(new ItemStack(Items.DIAMOND_BOOTS), 32, 1, 3, 25, 0.1f)},
                         5, new TradeOffers.Factory[]{
                                 new TradeOffers.SellItemFactory(new ItemStack(Items.DIAMOND_HELMET), 40, 1, 3, 30, 0.1f),
                                 new TradeOffers.SellItemFactory(new ItemStack(Items.DIAMOND_CHESTPLATE), 64, 1, 3, 30, 0.1f)})));
@@ -305,14 +305,14 @@ public class VillagerEntityMixin {
 
                 map.put(VillagerProfession.WEAPONSMITH, copyToFastUtilMap(ImmutableMap.of(
                         1, new TradeOffers.Factory[]{
-                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.COAL, 17, 9, 2),
+                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.COAL, 17, 9, 3),
                                 new TradeOffers.SellItemFactory(new ItemStack(Items.IRON_AXE), 1, 1, 6, 5, 0.1f),
                                 new TradeOffers.SellItemFactory(new ItemStack(Items.IRON_SWORD), 1, 1, 6, 5, 0.01f)},
                         2, new TradeOffers.Factory[]{
                                 new SimplyReimagined.BuyForOneEmeraldFactory(Items.IRON_INGOT, 7, 9, 5),
                                 new TradeOffers.SellItemFactory(new ItemStack(Items.BELL), 5, 1, 1, 10, 0.1f)},
                         3, new TradeOffers.Factory[]{
-                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.FLINT, 24, 7, 5),
+                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.FLINT, 24, 7, 10),
                                 new SimplyReimagined.BuyForMultipleEmeraldsFactory(Items.ANVIL, 1, 5, 2, 20)},
                         4, new TradeOffers.Factory[]{
                                 new SimplyReimagined.BuyForMultipleEmeraldsFactory(Items.DIAMOND, 1, 8,2, 30),
@@ -325,7 +325,7 @@ public class VillagerEntityMixin {
 
                 map.put(VillagerProfession.TOOLSMITH, copyToFastUtilMap(ImmutableMap.of(
                         1, new TradeOffers.Factory[]{
-                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.COAL, 15, 6, 2),
+                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.COAL, 15, 6, 3),
                                 new TradeOffers.SellItemFactory(new ItemStack(Items.STONE_AXE), 1, 1, 12, 5, 0.1f),
                                 new TradeOffers.SellItemFactory(new ItemStack(Items.STONE_SHOVEL), 1, 1, 12, 5, 0.1f),
                                 new TradeOffers.SellItemFactory(new ItemStack(Items.STONE_PICKAXE), 1, 1, 12, 5, 0.1f),
@@ -334,11 +334,11 @@ public class VillagerEntityMixin {
                                 new SimplyReimagined.BuyForOneEmeraldFactory(Items.IRON_INGOT, 8, 6, 5),
                                 new TradeOffers.SellItemFactory(new ItemStack(Items.BELL), 5, 1, 1, 10, 0.1f)},
                         3, new TradeOffers.Factory[]{
-                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.FLINT, 32, 12, 5),
-                                new TradeOffers.SellItemFactory(Items.IRON_AXE, 1, 1, 7 ),
-                                new TradeOffers.SellItemFactory(Items.IRON_SHOVEL, 1, 1, 7),
-                                new TradeOffers.SellItemFactory(Items.IRON_PICKAXE, 1, 1, 7),
-                                new TradeOffers.SellItemFactory(new ItemStack(Items.DIAMOND_HOE), 16, 1, 1, 10, 0.1f)},
+                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.FLINT, 26, 12, 5),
+                                new TradeOffers.SellItemFactory(Items.IRON_AXE, 1, 1, 10 ),
+                                new TradeOffers.SellItemFactory(Items.IRON_SHOVEL, 1, 1, 10),
+                                new TradeOffers.SellItemFactory(Items.IRON_PICKAXE, 1, 1, 10),
+                                new TradeOffers.SellItemFactory(new ItemStack(Items.DIAMOND_HOE), 16, 1, 1, 20, 0.1f)},
                         4, new TradeOffers.Factory[]{
                                 new SimplyReimagined.BuyForMultipleEmeraldsFactory(Items.DIAMOND, 1, 8, 2, 30),
                                 new TradeOffers.SellItemFactory(new ItemStack(Items.DIAMOND_AXE), 24, 1, 1,15, 0.1f ),
@@ -349,14 +349,14 @@ public class VillagerEntityMixin {
 
                 map.put(VillagerProfession.BUTCHER, copyToFastUtilMap(ImmutableMap.of(
                         1, new TradeOffers.Factory[]{
-                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.CHICKEN, 23, 12, 2),
-                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.PORKCHOP, 11, 12, 2),
+                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.CHICKEN, 19, 12, 5),
+                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.PORKCHOP, 10, 12, 5),
                                 new TradeOffers.SellItemFactory(Items.COOKED_BEEF, 1, 4, 5)},
                         2, new TradeOffers.Factory[]{
-                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.COAL, 18, 10, 3),
-                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.HONEY_BOTTLE, 2, 3, 7),
-                                new TradeOffers.SellItemFactory(Items.COOKED_PORKCHOP, 1, 5, 16, 5),
-                                new TradeOffers.SellItemFactory(Items.COOKED_CHICKEN, 1, 8, 16, 5)},
+                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.COAL, 18, 10, 4),
+                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.HONEY_BOTTLE, 2, 3, 10),
+                                new TradeOffers.SellItemFactory(Items.COOKED_PORKCHOP, 1, 5, 16, 8),
+                                new TradeOffers.SellItemFactory(Items.COOKED_CHICKEN, 1, 8, 16, 8)},
                         3, new TradeOffers.Factory[]{
                                 new SimplyReimagined.BuyForOneEmeraldFactory(Items.MUTTON, 11, 9, 15),
                                 new SimplyReimagined.BuyForOneEmeraldFactory(Items.BEEF, 10, 7, 15)},
@@ -372,7 +372,7 @@ public class VillagerEntityMixin {
                                 new TradeOffers.SellDyedArmorFactory(Items.LEATHER_LEGGINGS, 1, 12, 5),
                                 new TradeOffers.SellDyedArmorFactory(Items.LEATHER_CHESTPLATE, 1, 12, 5)},
                         2, new TradeOffers.Factory[]{
-                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.FLINT, 26, 6, 5),
+                                new SimplyReimagined.BuyForOneEmeraldFactory(Items.FLINT, 26, 6, 10),
                                 new TradeOffers.SellDyedArmorFactory(Items.LEATHER_HELMET, 1, 12, 10),
                                 new TradeOffers.SellDyedArmorFactory(Items.LEATHER_BOOTS, 1, 12, 10)},
                         3, new TradeOffers.Factory[]{

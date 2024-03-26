@@ -9,7 +9,7 @@ import org.spongepowered.asm.mixin.injection.ModifyConstant;
 public class EnderPearlEntityMixin {
     // reduce chance to spawn endermite on pearl use to 0
     @ModifyConstant(method = "onCollision", constant = @Constant(floatValue = 0.05f))
-    public float noChangeForEndermite(float constant){
+    public float noChanceForEndermite(float constant){
         return 0.0f;
     }
 }

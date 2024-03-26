@@ -8,9 +8,9 @@ import org.spongepowered.asm.mixin.injection.ModifyConstant;
 @Mixin(Blocks.class)
 public class BlocksMixin {
 
-    // blocks that take a long time to break (obsidian-based blocks, netherite, anvil, etc) break faster
-    @ModifyConstant(method = "<clinit>", constant = @Constant(floatValue = 1200.0f))
+    // obsidian-based blocks and netherite block break faster
+    @ModifyConstant(method = "<clinit>", constant = @Constant(floatValue = 50.0f))
     private static float nerfHardestBlocks(float constant){
-        return 800.0f;
+        return 40.0f;
     }
 }
